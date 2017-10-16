@@ -1,5 +1,4 @@
-# docker-elk
-
+# Docker-elk
 
 Start the ELK stack using `docker-compose`:
 ```bash
@@ -21,12 +20,15 @@ Starts existing containers for a service.
 $ docker-compose  start
 ```
 
+ ## Default ports
+ 
 By default, the stack exposes the following ports:
 * 5000: Logstash TCP input.
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
 
+ ## Example send content
 
 The shipped Logstash configuration allows you to send content via TCP:
 ```bash
